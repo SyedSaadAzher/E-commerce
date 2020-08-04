@@ -86,7 +86,7 @@ export default class App extends Component {
   async componentDidMount() {
     axios
       .get(
-        "http://ec2-3-136-87-139.us-east-2.compute.amazonaws.com:3001/products",
+        "http://localhost:3001/products",
         {
           headers: {
             "Access-Control-Allow-Origin": "*",
@@ -94,7 +94,6 @@ export default class App extends Component {
         }
       )
       .then((response) => {
-        console.log(response);
         let products = response.data.data;
         this.setState({ products });
       })

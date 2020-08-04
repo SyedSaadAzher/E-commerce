@@ -25,8 +25,8 @@ class ProductItem extends Component {
               {product.stock > 0 ? (
                 <small>{product.stock + " Available"}</small>
               ) : (
-                <small className="has-text-danger">Out Of Stock</small>
-              )}
+                  <small className="has-text-danger">Out Of Stock</small>
+                )}
               <div className="is-clearfix">
                 <button
                   className="button is-small is-outlined is-primary   is-pulled-right"
